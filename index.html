@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>First chart</title>
+</head>
+<body>
+    <div class="bundle">
+        <div class="theData">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+        <div class="inputs">
+            <label for="col">Añadir nueva ronda</label>
+            <input type="number" id="newCol" placeholder="Nueva ronda" name="col">
+            <label for="mult">Añadir multiplicador</label>
+            <input type="number" name="multi" id="multiplier" placeholder="Multiplicador de ronda" name="mult">
+            <div class="botones">
+                <input type="submit" value="Agregar" id="submit">
+                <input type="submit" value="Quitar anterior" id="deleter">
+                <input type="submit" value="Limpiar gráfico" id="clearer">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
